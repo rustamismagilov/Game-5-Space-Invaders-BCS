@@ -5,7 +5,7 @@ public class Pathfinder : MonoBehaviour
 {
     private EnemySpawner enemySpawner;
     private WaveConfigSO waveConfig;
-    
+
     private List<Transform> waypoints;
     private int waypointIndex = 0;
 
@@ -14,7 +14,7 @@ public class Pathfinder : MonoBehaviour
     {
         enemySpawner = FindFirstObjectByType<EnemySpawner>();
     }
-    
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -41,7 +41,11 @@ public class Pathfinder : MonoBehaviour
             {
                 waypointIndex++;
             }
-           
-        } else { Destroy(gameObject); }
+
+        }
+        else 
+        { 
+            Destroy(gameObject); 
+        }
     }
 }

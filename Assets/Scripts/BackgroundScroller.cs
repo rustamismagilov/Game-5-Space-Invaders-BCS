@@ -7,7 +7,7 @@ public class BackgroundScroller : MonoBehaviour
     private Vector2 offset;
 
     private Material material;
-    
+
     void Awake()
     {
         material = GetComponent<SpriteRenderer>().material;

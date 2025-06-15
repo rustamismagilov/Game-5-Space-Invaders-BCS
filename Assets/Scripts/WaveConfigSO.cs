@@ -5,7 +5,7 @@ using UnityEngine;
 public class WaveConfigSO : ScriptableObject
 {
     [SerializeField] private List<GameObject> enemyPrefabs;
-    
+
     [SerializeField] private Transform pathPrefab;
     [SerializeField] private float moveSpeed = 5f;
 
@@ -50,5 +50,4 @@ public class WaveConfigSO : ScriptableObject
             timeBetweenEnemySpawns + spawnTimeVariance);
         return Mathf.Clamp(spawnTime, minimumSpawnTime, float.MaxValue);
     }
-
 }

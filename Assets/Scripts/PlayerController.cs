@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
 
     private Vector2 minBounds;
     private Vector2 maxBounds;
-    
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
     {
         Camera mainCamera = Camera.main;
         minBounds = mainCamera.ViewportToWorldPoint(new Vector2(0, 0));
-        maxBounds = mainCamera.ViewportToWorldPoint(new Vector2(1,1));
+        maxBounds = mainCamera.ViewportToWorldPoint(new Vector2(1, 1));
     }
 
     void Move()
@@ -45,6 +45,6 @@ public class PlayerController : MonoBehaviour
     void OnMove(InputValue value)
     {
         rawInput = value.Get<Vector2>();
-        Debug.Log(rawInput);
+        //Debug.Log(rawInput);
     }
 }
